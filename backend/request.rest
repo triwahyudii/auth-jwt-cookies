@@ -1,0 +1,25 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWEiOiJKZXNlbiBPZSIsImt0cCI6IjEwMDU0ODQ4MDI3NjAwMDEiLCJlbWFpbCI6Implc2VuQGdtYWlsLmNvbSIsImlhdCI6MTY2MjA5MDMwMiwiZXhwIjoxNjYyMDkwMzYyfQ.VU6JVxBOw1Jd3AXtUDUYtFIgyVXb39K6FduB32oN8do
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "nama": "Jesen Oe",
+    "ktp": "1005484802760001",
+    "tanggal_lahir": "06112002",
+    "telepon": "08575500086",
+    "email": "jesen@gmail.com",
+    "password": "987654321",
+    "confPassword": "987654321"
+}
+
+###
+POST http://localhost:5000/masuk
+Content-Type: application/json
+
+{
+    "ktp": "1005484802760001",
+    "password": "987654321"
+}
